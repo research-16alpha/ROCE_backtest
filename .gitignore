@@ -21,17 +21,17 @@ ENV/
 *.swo
 *~
 
-# Data files (if too large, you may want to exclude these)
-# Uncomment if you don't want to commit data files
-# *.csv
-# *.png
+# Data files - EXCLUDE LARGE FILES (exceed GitHub's 100MB limit)
+close_price.csv
+ROCE.csv
+*.csv
 
-# Results (optional - uncomment if you don't want to commit results)
-# simple_backtest_results/
-# *.png
-# backtest_summary.csv
-# portfolio_history_*.csv
-# transactions_*.csv
+# Results (exclude generated results)
+simple_backtest_results/
+*.png
+backtest_summary.csv
+portfolio_history_*.csv
+transactions_*.csv
 
 # OS
 .DS_Store
